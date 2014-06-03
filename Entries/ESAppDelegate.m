@@ -7,6 +7,8 @@
 //
 
 #import "ESAppDelegate.h"
+#import "ESEntry.h"
+#import "ESViewController.h"
 
 @implementation ESAppDelegate
 
@@ -14,7 +16,14 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    ESViewController *viewController = [ESViewController new];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    self.window.rootViewController = nav;
+    
     self.window.backgroundColor = [UIColor whiteColor];
+    ESEntry *entry = [ESEntry new];
+    entry.date = [NSDate date];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

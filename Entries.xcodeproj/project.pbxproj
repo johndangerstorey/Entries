@@ -19,6 +19,9 @@
 		711A50D119388277005642EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711A50B919388277005642EF /* UIKit.framework */; };
 		711A50D919388277005642EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 711A50D719388277005642EF /* InfoPlist.strings */; };
 		711A50DB19388277005642EF /* EntriesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 711A50DA19388277005642EF /* EntriesTests.m */; };
+		F5228FF6193A3B6C00D0160A /* ESEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F5228FF5193A3B6C00D0160A /* ESEntry.m */; };
+		F5228FFF193A3D3700D0160A /* ESEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5228FFE193A3D3700D0160A /* ESEntryController.m */; };
+		F5229002193A41C000D0160A /* ESViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5229001193A41C000D0160A /* ESViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		711A50D619388277005642EF /* EntriesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EntriesTests-Info.plist"; sourceTree = "<group>"; };
 		711A50D819388277005642EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		711A50DA19388277005642EF /* EntriesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntriesTests.m; sourceTree = "<group>"; };
+		F5228FF4193A3B6C00D0160A /* ESEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ESEntry.h; path = Entries/ESEntry.h; sourceTree = "<group>"; };
+		F5228FF5193A3B6C00D0160A /* ESEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ESEntry.m; path = Entries/ESEntry.m; sourceTree = "<group>"; };
+		F5228FFD193A3D3700D0160A /* ESEntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESEntryController.h; sourceTree = "<group>"; };
+		F5228FFE193A3D3700D0160A /* ESEntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESEntryController.m; sourceTree = "<group>"; };
+		F5229000193A41C000D0160A /* ESViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESViewController.h; sourceTree = "<group>"; };
+		F5229001193A41C000D0160A /* ESViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +118,11 @@
 			children = (
 				711A50C419388277005642EF /* ESAppDelegate.h */,
 				711A50C519388277005642EF /* ESAppDelegate.m */,
+				F5228FF7193A3B7A00D0160A /* Entry */,
+				F5228FFD193A3D3700D0160A /* ESEntryController.h */,
+				F5228FFE193A3D3700D0160A /* ESEntryController.m */,
+				F5229000193A41C000D0160A /* ESViewController.h */,
+				F5229001193A41C000D0160A /* ESViewController.m */,
 				711A50C719388277005642EF /* Images.xcassets */,
 				711A50BC19388277005642EF /* Supporting Files */,
 			);
@@ -142,6 +156,16 @@
 				711A50D719388277005642EF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5228FF7193A3B7A00D0160A /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				F5228FF4193A3B6C00D0160A /* ESEntry.h */,
+				F5228FF5193A3B6C00D0160A /* ESEntry.m */,
+			);
+			name = Entry;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +265,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				711A50C619388277005642EF /* ESAppDelegate.m in Sources */,
+				F5229002193A41C000D0160A /* ESViewController.m in Sources */,
+				F5228FFF193A3D3700D0160A /* ESEntryController.m in Sources */,
+				F5228FF6193A3B6C00D0160A /* ESEntry.m in Sources */,
 				711A50C219388277005642EF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +465,7 @@
 				711A50E019388277005642EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		711A50E119388277005642EF /* Build configuration list for PBXNativeTarget "EntriesTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +474,7 @@
 				711A50E319388277005642EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
